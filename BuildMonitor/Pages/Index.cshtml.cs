@@ -18,8 +18,8 @@ namespace BuildMonitor.Pages
 			RequestHelper.Username = config.Value.UserName;
 			RequestHelper.Password = config.Value.Password;
 
-			modelHandler = new DefaultBuildMonitorModelHandler();
-			//modelHandler = new CustomBuildMonitorModelHandler();
+			//modelHandler = new DefaultBuildMonitorModelHandler();
+			modelHandler = new CustomBuildMonitorModelHandler();
 			modelHandler.Initialize(config.Value);
 
 			var model = modelHandler.GetModel();

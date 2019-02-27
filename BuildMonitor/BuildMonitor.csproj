@@ -4,14 +4,16 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <UserSecretsId>632c561f-3ed7-4d6d-80b2-d7a23b8c65cd</UserSecretsId>
+    <SelfContained>false</SelfContained>
+    <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
   </PropertyGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="2.2.0" />
   </ItemGroup>
-
 
   <ItemGroup>
     <None Update="App_Data\Settings.xml">
